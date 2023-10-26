@@ -1,10 +1,70 @@
-.ini{
-    width: 1475px;
-height: 125px;
-flex-shrink: 0;
-background: #808080;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.banner{
-    
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos da navegação */
+nav {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos do banner */
+#banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+    color: #fff;
+    padding: 100px;
+}
+
+/* Estilos do catálogo (personalize conforme necessário) */
+#catalog {
+    text-align: center;
+}
+
+/* Estilos da seção de foto */
+#photo {
+    text-align: center;
+    padding: 20px;
+}
+
+#photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
