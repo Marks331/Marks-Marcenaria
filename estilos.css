@@ -1,0 +1,510 @@
+/* Estilos gerais da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.menu-container {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-container a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries para telas maiores (desktops) */
+@media (min-width: 1200px) {
+    .menu-container {
+        padding: 15px;
+    }
+
+    .menu-container a {
+        padding: 15px 25px;
+    }
+
+    .footer-container {
+        flex-wrap: nowrap;
+    }
+
+    .footer-column {
+        padding: 0 20px;
+    }
+
+    .category, .testimonial {
+        width: calc(20% - 20px);
+        margin-right: 20px;
+    }
+
+    .category:last-child, .testimonial:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Media Queries para telas menores (tablets e celulares) */
+@media (max-width: 768px) {
+    .menu-container {
+        padding: 5px;
+    }
+
+    .menu-container a {
+        padding: 10px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        padding: 0;
+        text-align: center;
+    }
+
+    .category, .testimonial {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+
+    .category:last-child, .testimonial:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Media Queries para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .menu-container a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .category, .testimonial {
+        width: calc(100% - 20px);
+        margin-right: 0;
+    }
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Estilos do formulário de contato */
+.contact-form {
+    background-color: #f7f7f7;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* CSS para a página de galeria */
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category {
+    width: calc(25% - 20px); /* Alterado para 25% para manter quatro categorias por linha */
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between; /* Adicionado para manter a imagem e o texto separados */
+}
+
+.category img {
+    max-width: 100%;
+    max-height: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.category p {
+    margin-top: 10px;
+}
+
+.category:hover img {
+    transform: scale(1.1);
+}
+
+/* Ajustes para telas menores (tablets) */
+@media (max-width: 768px) {
+    .category {
+        width: calc(33.33% - 20px);
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .category {
+        width: calc(100% - 20px);
+    }
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px; /* Espaçamento externo da galeria */
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    margin: 0; /* Removendo a margem para eliminar espaços entre as imagens */
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden; /* Garante que as imagens não ultrapassem os limites do contêiner */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem e a preenche no contêiner */
+    transition: transform 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Adiciona uma borda quando a imagem está ampliada */
+.image-container.active {
+    border: 2px solid #555;
+}
+
+/* Adicione essas regras de estilo para as perguntas frequentes (FAQ) */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-question {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.faq-question h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-question p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Adicione estilos de destaque para quando o usuário passa o mouse sobre as perguntas */
+.faq-question:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+/* Adicione essas regras de estilo para a página de depoimentos */
+.testimonial {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* Centraliza o conteúdo vertical e horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Adicione estilos de destaque quando o usuário passa o mouse sobre os depoimentos */
+.testimonial:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+/* Media Queries para tornar os depoimentos responsivos */
+/* Para tablets */
+@media (max-width: 768px) {
+    .testimonial {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+
+    .testimonial:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+    .testimonial {
+        width: calc(100% - 40px);
+        margin-right: 0;
+    }
+}
+
+/* Adicione essas regras de estilo para a página de serviços */
+.service {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos de destaque quando o usuário passa o mouse sobre os serviços */
+.service:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+/* Adicione essas regras de estilo para a página "Sobre Nós" */
+.content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Ajustes para telas menores (tablets) */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+}
+
+.catalogo {
+    padding: 20px;
+}
+
+.catalogo h1 {
+    text-align: center;
+}
+
+.catalogo-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalogo-item {
+    text-align: center;
+    margin: 10px;
+}
+
+.catalogo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+.catalogo-item p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
