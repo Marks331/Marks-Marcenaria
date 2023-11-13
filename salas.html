@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Marks Marcenaria</title>
+    <title>Marks Marcenaria - Salas</title>
 </head>
 <body>
     <div class="header">
@@ -13,7 +13,7 @@
     </div>
     <div class="menu-container">
         <a href="index.html">Início</a>
-        <a href="catalogo.html">Catalogo</a>
+        <a href="catalogo.html">Catálogo</a>
         <a href="galeria.html">Galeria</a>
         <a href="contato.html">Contato</a>
         <a href="sobre.html">Sobre Nós</a>
@@ -21,10 +21,19 @@
         <a href="faq.html">FAQ</a>
         <a href="servicos.html">Serviços</a>
     </div>
-    <div class="content">
-        <h1>Bem-vindo à Marks Marcenaria</h1>
-        <p>Somos especializados em criar móveis sob medida de alta qualidade.</p>
-        <p>Confira nossos produtos, galeria de trabalhos e entre em contato conosco para solicitar um orçamento personalizado.</p>
+    <div class="gallery">
+        <div class="image-container" onclick="openImage('img/s1.jpg')">
+            <img src="img/s1.jpg" alt="Sala 1">
+        </div>
+        <div class= "image-container" onclick="openImage('img/s2.jpg')">
+            <img src="img/s2.jpg" alt="Sala 2">
+        </div>
+        <div class="image-container" onclick="openImage('img/s3.jpg')">
+            <img src="img/s3.jpg" alt="Sala 3">
+        </div>
+        <div class="image-container" onclick="openImage('img/s4.jpg')">
+            <img src="img/s4.jpg" alt="Sala 4">
+        </div>
     </div>
     <footer class="footer">
         <div class="footer-container">
@@ -51,5 +60,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
